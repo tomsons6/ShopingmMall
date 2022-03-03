@@ -124,5 +124,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  CanvasCamera: {fileID: 0}
-  ProductDisplay: {fileID: 0}
+  CanvasCamera: {fileID: 2636470910330957331, guid: 2f5a047f52036fd439badf773b4975c1, type: 3}
+  ProductDisplay: {fileID: 2837598073978608777, guid: 0a869a9a47be88e4aa6e3e092b2fc148, type: 3}

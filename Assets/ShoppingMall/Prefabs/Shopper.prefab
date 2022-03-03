@@ -222,8 +222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 444c165610d4f774e85b55d057c2a43b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShoppingListDisplay: {fileID: 0}
-  CanvasCamera: {fileID: 0}
+  ShoppingListDisplay: {fileID: 2837598073978608777, guid: 0a869a9a47be88e4aa6e3e092b2fc148, type: 3}
+  CanvasCamera: {fileID: 2636470910330957331, guid: 2f5a047f52036fd439badf773b4975c1, type: 3}
 --- !u!114 &2920570049681498068
 MonoBehaviour:
   m_ObjectHideFlags: 0
