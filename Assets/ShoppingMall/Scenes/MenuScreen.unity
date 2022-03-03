@@ -6865,5 +6865,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6197081115096364774, guid: 21ddb387cabb3a34bb18c76e74b54178, type: 3}
+      propertyPath: SelectedShoppingList
+      value: 
+      objectReference: {fileID: 11400000, guid: 1689637162507c74f8b9e9c6c312758a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ddb387cabb3a34bb18c76e74b54178, type: 3}
