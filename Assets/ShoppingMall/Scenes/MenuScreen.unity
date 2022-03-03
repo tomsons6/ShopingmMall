@@ -1238,6 +1238,7 @@ GameObject:
   - component: {fileID: 365965094}
   - component: {fileID: 365965093}
   - component: {fileID: 365965096}
+  - component: {fileID: 365965097}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -1291,12 +1292,12 @@ MonoBehaviour:
   autoStartServerBuild: 1
   serverTickRate: 30
   offlineScene: 
-  onlineScene: 
+  onlineScene: Assets/ShoppingMall/Scenes/ShopScene.unity
   transport: {fileID: 365965093}
   networkAddress: localhost
   maxConnections: 100
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 0}
+  playerPrefab: {fileID: 6770866621721137630, guid: b22ae9c176e20974491bed728898d2e1, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
   spawnPrefabs: []
@@ -1328,6 +1329,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsetX: 0
   offsetY: 0
+--- !u!114 &365965097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365965092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b979f26c95d34324ba005bfacfa9c4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &374906020
 GameObject:
   m_ObjectHideFlags: 0
