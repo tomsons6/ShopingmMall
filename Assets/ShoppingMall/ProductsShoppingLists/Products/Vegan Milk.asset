@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
+  m_Name: Vegan Milk
+  m_EditorClassIdentifier: 
+  Name: Vegan Milk
+  Desctription: Vegan Milk
+  Model: {fileID: 132172, guid: d07fe8d2ce9ee3544b59eb73ea694f6a, type: 3}
+  ProductCategory: 0
+  price: 3.5
