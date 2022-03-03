@@ -2335,6 +2335,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2920570049681498068, guid: b22ae9c176e20974491bed728898d2e1, type: 3}
+      propertyPath: sceneId
+      value: 3547929913
+      objectReference: {fileID: 0}
     - target: {fileID: 6770866621721137624, guid: b22ae9c176e20974491bed728898d2e1, type: 3}
       propertyPath: CanvasCamera
       value: 
