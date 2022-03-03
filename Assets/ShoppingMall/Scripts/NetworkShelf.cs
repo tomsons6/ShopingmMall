@@ -10,13 +10,16 @@ public class NetworkShelf : NetworkBehaviour
     [SerializeField]
     GameObject ProductDisplay;
 
+    NetworkIdentity identity;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        identity = GetComponent<NetworkIdentity>();
+        identity.AssignClientAuthority(connectionToServer);
     }
 
-    [Command]
+    [ClientRpc]
     public void ClickOnShelf()
     {
         Debug.Log("Meesage sent from other pc");
