@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2319549488042768955}
   - component: {fileID: 4031043108536382936}
   - component: {fileID: 4031043108536382935}
-  - component: {fileID: 6786955737061407802}
   m_Layer: 0
   m_Name: Shelf
   m_TagString: Shelf
@@ -110,19 +109,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShelfProducts: 0
---- !u!114 &6786955737061407802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4264994095762889710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8c43a92617e47340920d5eb7fe7a79f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  CanvasCamera: {fileID: 2636470910330957331, guid: 2f5a047f52036fd439badf773b4975c1, type: 3}
-  ProductDisplay: {fileID: 2837598073978608777, guid: 0a869a9a47be88e4aa6e3e092b2fc148, type: 3}

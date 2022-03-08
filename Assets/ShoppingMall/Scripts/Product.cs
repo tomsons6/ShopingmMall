@@ -11,7 +11,7 @@ public class Product : ScriptableObject
 
     public GameObject Model;
 
-    public enum Category {Milk, Bread, wood};
+    public enum Category {Milk, Bread, wood, vegetables, nails, CanFood};
 
     public Category ProductCategory;
 

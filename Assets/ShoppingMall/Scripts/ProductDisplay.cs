@@ -15,6 +15,8 @@ public class ProductDisplay : MonoBehaviour
     Text ProductDesctription;
     [SerializeField]
     Text ProductPrice;
+    [SerializeField]
+    public Button BuyButton;
     
     public bool isDisplayed;
 

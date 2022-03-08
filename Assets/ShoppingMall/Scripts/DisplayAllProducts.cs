@@ -1,10 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DisplayAllProducts : MonoBehaviour
 {
     public List<GameObject> TempGoList;
+
+    ShoppingManager SPManager;
+
+    void Start()
+    {
+        SPManager = GameObject.FindGameObjectWithTag("ShopManager").GetComponent<ShoppingManager>();
+    }
+
     public void DisplayProductCategory(Product.Category category)
     {
         Debug.Log("Display category");
@@ -18,6 +27,7 @@ public class DisplayAllProducts : MonoBehaviour
                     if (!disp.isDisplayed)
                     {
                         disp.ShowProductInfo(prod);
+                        disp.BuyButton.onClick.AddListener(delegate { Buy(prod); });
                         TempGoList.Add(disp.TempGo);
                         disp.isDisplayed = true;
                         break;
@@ -32,5 +42,9 @@ public class DisplayAllProducts : MonoBehaviour
         {
             disp.isDisplayed = false;
         }
+    }
+    public void Buy(Product product)
+    {
+        SPManager.checkForBoughtProducts(product);
     }
 }

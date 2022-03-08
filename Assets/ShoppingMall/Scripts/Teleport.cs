@@ -38,7 +38,6 @@ public class Teleport : MonoBehaviour
         while (t <= movingspeed)
         {
             t += Time.deltaTime;
-            print(t.ToString());
             Vector3 CurrentPosition = Vector3.Lerp(transform.position, CameraEndPosition, (t/movingspeed));
             transform.position = CurrentPosition;
             if(transform.position == CameraEndPosition)

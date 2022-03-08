@@ -133,6 +133,9 @@ MonoBehaviour:
   ProductModel: {fileID: 2417862252655719166}
   ProductDesctription: {fileID: 2417862253941398474}
   ProductPrice: {fileID: 2417862254085133853}
+  BuyButton: {fileID: 2417862253162148555}
+  isDisplayed: 0
+  TempGo: {fileID: 0}
 --- !u!114 &2417862253162148555
 MonoBehaviour:
   m_ObjectHideFlags: 0

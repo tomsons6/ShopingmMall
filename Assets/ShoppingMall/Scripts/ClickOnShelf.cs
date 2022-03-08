@@ -27,10 +27,9 @@ public class ClickOnShelf : MonoBehaviour
             {
                 if (hit.transform.tag == "Shelf")
                 {
-                    hit.transform.GetComponent<NetworkShelf>().ClickOnShelf();
-                    //CanvasCamera.SetActive(true);
-                    //ShoppingListDisplay.SetActive(true);
-                    //ShoppingListDisplay.GetComponent<DisplayAllProducts>().DisplayProductCategory(hit.transform.GetComponent<ShelfInfo>().ShelfProducts);
+                    CanvasCamera.SetActive(true);
+                    ShoppingListDisplay.SetActive(true);
+                    ShoppingListDisplay.GetComponent<DisplayAllProducts>().DisplayProductCategory(hit.transform.GetComponent<CategoryInfo>().categoryInfo);
                 }
             }
         }

@@ -17,6 +17,7 @@ public class NetworkShelf : NetworkBehaviour
     {
         identity = GetComponent<NetworkIdentity>();
         identity.AssignClientAuthority(connectionToServer);
+
     }
 
     [ClientRpc]
