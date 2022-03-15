@@ -18,7 +18,7 @@ public class ShoppingListDisplay : MonoBehaviour
         foreach (Product.Category cat in ProdList.ShoppingListProducts)
         {
             GameObject TempObj = Instantiate(CategoryDisplay, CategoryRoot.transform);
-            TempObj.GetComponent<CategoryInfo>().categoryInfo = cat;
+            TempObj.GetComponent<ShoppingCartItem>().CategoryInfo = cat;
             SPListButtons.Add(TempObj);
             TempObj.GetComponentInChildren<Text>().text = cat.ToString();
 

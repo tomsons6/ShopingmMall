@@ -9,25 +9,48 @@ public class DisplayAllProducts : MonoBehaviour
 
     ShoppingManager SPManager;
 
+    [SerializeField]
+    GameObject ProdDisp1;
+    [SerializeField]
+    GameObject ProdDisp2;
+
+    public List<DisplayProducts> DispProductCheck;
+
     void Start()
     {
-        SPManager = GameObject.FindGameObjectWithTag("ShopManager").GetComponent<ShoppingManager>();
+        SPManager = GetComponent<ShoppingManager>();
+        foreach(Product prod in ProductManager.Instance.AllProducts)
+        {
+            DispProductCheck.Add(new DisplayProducts(prod, false));
+        }
     }
 
     public void DisplayProductCategory(Product.Category category)
     {
         Debug.Log("Display category");
-        foreach (Product prod in ProductManager.Instance.AllProducts)
+        foreach (DisplayProducts prod in DispProductCheck)
         {
-            Debug.Log(prod.Name);
-            if (prod.ProductCategory == category)
+            if (prod.Prod.ProductCategory == category)
             {
-                foreach (ProductDisplay disp in this.gameObject.GetComponentsInChildren(typeof(ProductDisplay)))
+                foreach (ProductDisplay disp in ProdDisp1.GetComponentsInChildren(typeof(ProductDisplay)))
                 {
-                    if (!disp.isDisplayed)
+                    if (!disp.isDisplayed && !prod.IsDisplayed)
                     {
-                        disp.ShowProductInfo(prod);
-                        disp.BuyButton.onClick.AddListener(delegate { Buy(prod); });
+                        prod.IsDisplayed = true;
+                        disp.ShowProductInfo(prod.Prod);
+                        disp.BuyButton.onClick.AddListener(delegate { Buy(prod.Prod); });
+                        TempGoList.Add(disp.TempGo);
+                        disp.isDisplayed = true;
+                        break;
+                    }
+                }
+                foreach (ProductDisplay disp in ProdDisp2.GetComponentsInChildren(typeof(ProductDisplay)))
+                {
+                    if (!disp.isDisplayed && !prod.IsDisplayed)
+                    {
+                        prod.IsDisplayed = true;
+                        disp.ShowProductInfo(prod.Prod);
+                        disp.BuyButton.onClick.AddListener(delegate { Buy(prod.Prod); });
                         TempGoList.Add(disp.TempGo);
                         disp.isDisplayed = true;
                         break;
@@ -38,13 +61,34 @@ public class DisplayAllProducts : MonoBehaviour
     }
     public void ResetDisplay()
     {
-        foreach(ProductDisplay disp in this.gameObject.GetComponentsInChildren(typeof(ProductDisplay)))
+        foreach(ProductDisplay disp in ProdDisp1.GetComponentsInChildren(typeof(ProductDisplay)))
         {
             disp.isDisplayed = false;
+            disp.BuyButton.onClick.RemoveAllListeners();
+        }
+        foreach (ProductDisplay disp in ProdDisp2.GetComponentsInChildren(typeof(ProductDisplay)))
+        {
+            disp.isDisplayed = false;
+            disp.BuyButton.onClick.RemoveAllListeners();
+        }
+        foreach(DisplayProducts prod in DispProductCheck)
+        {
+            prod.IsDisplayed = false;
         }
     }
     public void Buy(Product product)
     {
         SPManager.checkForBoughtProducts(product);
+    }
+}
+[System.Serializable]
+public class DisplayProducts
+{
+    public Product Prod;
+    public bool IsDisplayed;
+    public DisplayProducts(Product cat, bool isDisp)
+    {
+        this.Prod = cat;
+        this.IsDisplayed = isDisp;
     }
 }

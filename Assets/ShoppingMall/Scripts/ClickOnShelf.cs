@@ -6,9 +6,16 @@ using Mirror;
 public class ClickOnShelf : MonoBehaviour
 {
     [SerializeField]
-    GameObject ShoppingListDisplay;
+    GameObject Screen1ProductDisplay;
     [SerializeField]
-    GameObject CanvasCamera;
+    GameObject Screen1Camera;
+    [SerializeField]
+    GameObject Screen2ProductDisplay;
+    [SerializeField]
+    GameObject Screen2Camera;
+    [SerializeField]
+    DisplayAllProducts DspAllProd;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,24 +34,28 @@ public class ClickOnShelf : MonoBehaviour
             {
                 if (hit.transform.tag == "Shelf")
                 {
-                    CanvasCamera.SetActive(true);
-                    ShoppingListDisplay.SetActive(true);
-                    ShoppingListDisplay.GetComponent<DisplayAllProducts>().DisplayProductCategory(hit.transform.GetComponent<CategoryInfo>().categoryInfo);
+                    Screen1Camera.SetActive(true);
+                    Screen1ProductDisplay.SetActive(true);
+                    Screen2Camera.SetActive(true);
+                    Screen2ProductDisplay.SetActive(true);
+                    DspAllProd.DisplayProductCategory(hit.transform.GetComponent<CategoryInfo>().categoryInfo);
                 }
             }
         }
         if (Input.GetMouseButtonDown(1))
         {
-            if (CanvasCamera.activeInHierarchy && ShoppingListDisplay.activeInHierarchy)
+            if (Screen1Camera.activeInHierarchy && Screen1ProductDisplay.activeInHierarchy && Screen2Camera.activeInHierarchy && Screen2ProductDisplay.activeInHierarchy)
             {
-                CanvasCamera.SetActive(false);
-                ShoppingListDisplay.GetComponent<DisplayAllProducts>().ResetDisplay();
-                foreach (GameObject go in ShoppingListDisplay.GetComponent<DisplayAllProducts>().TempGoList)
+                //Screen1Camera.SetActive(false);
+                //Screen2Camera.SetActive(false);
+                DspAllProd.ResetDisplay();
+                foreach (GameObject go in DspAllProd.TempGoList)
                 {
                     Destroy(go);
                 }
-                ShoppingListDisplay.GetComponent<DisplayAllProducts>().TempGoList.Clear();
-                ShoppingListDisplay.SetActive(false);
+                Screen1ProductDisplay.SetActive(false);
+                Screen2ProductDisplay.SetActive(false);
+                DspAllProd.TempGoList.Clear();
             }
         }
     }

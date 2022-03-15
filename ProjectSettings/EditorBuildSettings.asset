@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/ShoppingMall/Scenes/ShopScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/ShoppingMall/Scenes/MPSettings.unity
-    guid: 31e9480736dfd134286fcc7b6701ad07
+    path: Assets/ShoppingMall/Scenes/EndScene.unity
+    guid: 1d901a39636530f4e8c5eaa3535d4184
   m_configObjects: {}

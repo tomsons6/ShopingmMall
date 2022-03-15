@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Mirror;
+using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -12,9 +13,14 @@ public class MainMenuController : MonoBehaviour
 
     [SerializeField]
     int BackButtonID;
+    [SerializeField]
+    Text ShoppingListField;
+    [SerializeField]
+    Text Budget;
     // Start is called before the first frame update
     void Start()
     {
+        GameManager.Instance.CurrentBudget = 0;
         foreach(Transform child in transform)
         {
             if(child.GetComponent<PanelId>() != null)
@@ -53,6 +59,24 @@ public class MainMenuController : MonoBehaviour
                 Panel.gameObject.SetActive(false);
             }
         }
+        if (ID == 7)
+        {
+            int numb = 0;
+            if (GameManager.Instance.SelectedShoppingList != null)
+            {
+                foreach (Product.Category prod in GameManager.Instance.SelectedShoppingList.ShoppingListProducts)
+                {
+                    numb++;
+                    ShoppingListField.text += "\n" + numb + ". " + prod.ToString();
+                }
+            }
+            Budget.text = "Budget = " + GameManager.Instance.SelectedShoppingList.Budget;
+        }
+        else
+        {
+            ShoppingListField.text = "";
+        }
+
     }
 
     public void BackToSpecificPanel()

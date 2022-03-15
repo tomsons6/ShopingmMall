@@ -1,0 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using System.Linq;
+
+public class ShoppingCartItem : MonoBehaviour
+{
+    public Product CartItem;
+    public Product.Category CategoryInfo;
+    ShoppingManager ShManager;
+
+    void Start()
+    {
+        ShManager = GameObject.FindGameObjectWithTag("ShopManager").GetComponent<ShoppingManager>();
+        this.gameObject.GetComponent<Button>().onClick.AddListener(RemoveItem);
+    }
+
+    public void RemoveItem()
+    {
+
+            CheckIfItemBought TempCartItem = ShManager.ShoppingListCheck.Find(x => x.TakenProduct == CartItem);
+            ShManager.IncreaseBudget(CartItem);
+            ShManager.ButtonColorChange(Color.red, GetComponent<Button>());
+            TempCartItem.IsBought = false;
+            TempCartItem.TakenProduct = null;
+            CartItem = null;
+
+    }
+}

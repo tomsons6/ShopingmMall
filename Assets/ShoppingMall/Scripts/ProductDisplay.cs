@@ -25,6 +25,7 @@ public class ProductDisplay : MonoBehaviour
     {
         ProductName.text = product.Name;
         TempGo = Instantiate(product.Model);
+        TempGo.AddComponent<RotateProduct>();
         TempGo.transform.parent = ProductModel.transform;
         TempGo.transform.localPosition = new Vector3(0f, -100f, 0f);
         TempGo.transform.localScale = new Vector3(500f, 500f, 500f);

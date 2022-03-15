@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ShoppingManager : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class ShoppingManager : MonoBehaviour
         ShLDisp = GameObject.FindGameObjectWithTag("ShopListDisp").GetComponent<ShoppingListDisplay>();
         foreach (Product.Category cat in ShList.ShoppingListProducts)
         {
-            ShoppingListCheck.Add(new CheckIfItemBought(cat, false));
+            ShoppingListCheck.Add(new CheckIfItemBought(cat, false,null));
         }
         Budget = ShList.Budget;
         ShLDisp.GetComponentInChildren<Text>().text = "Budget = " + Budget;
@@ -30,28 +31,45 @@ public class ShoppingManager : MonoBehaviour
             {
                 foreach (GameObject Go in ShLDisp.SPListButtons)
                 {
-                    var Colors = Go.GetComponent<Button>().colors;
-                    if (Colors.normalColor != Color.green && Go.GetComponent<CategoryInfo>().categoryInfo == prod.ProductCategory)
+                    ShoppingCartItem TempCartItem = Go.GetComponent<ShoppingCartItem>();
+                    if (TempCartItem.CartItem == null && TempCartItem.CategoryInfo == prod.ProductCategory )
                     {
-                        
-                        Colors.selectedColor = Color.green;
-                        Colors.normalColor = Color.green;
-                        Colors.pressedColor = Color.green;
-                        Go.GetComponent<Button>().colors = Colors;
+                        ButtonColorChange(Color.green, Go.GetComponent<Button>());
+                        check.TakenProduct = prod;
+                        TempCartItem.CartItem = prod;                       
                         //decrease budget
                         DecreaseBudget(prod);
+                        check.IsBought = true;
                         break;
                     }
                 }
-                check.IsBought = true;
                 break;
             }
         }
+    }
+    public void ButtonColorChange(Color color, Button button)
+    {
+        var Colors = button.colors;
+        Colors.selectedColor = color;
+        Colors.normalColor = color;
+        Colors.pressedColor = color;
+        button.colors = Colors;
     }
     public void DecreaseBudget(Product prod)
     {
         Budget -= prod.price;
         ShLDisp.GetComponentInChildren<Text>().text = "Budget = " + Budget;
+    }
+    public void IncreaseBudget(Product prod)
+    {
+        Budget += prod.price;
+        ShLDisp.GetComponentInChildren<Text>().text = "Budget = " + Budget;
+    }
+
+    public void CheckOutPressed()
+    {
+        GameManager.Instance.CurrentBudget = Budget;
+        SceneManager.LoadScene("EndScene");
     }
 }
 [System.Serializable]
@@ -59,9 +77,11 @@ public class CheckIfItemBought
 {
     public Product.Category ProductCat;
     public bool IsBought;
-    public CheckIfItemBought(Product.Category ProdCat, bool Bought)
+    public Product TakenProduct;
+    public CheckIfItemBought(Product.Category ProdCat, bool Bought, Product TakeProd)
     {
         this.ProductCat = ProdCat;
         this.IsBought = Bought;
+        this.TakenProduct = TakeProd;
     }
 }

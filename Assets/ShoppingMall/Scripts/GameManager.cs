@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public ShoppingList SelectedShoppingList;
 
     public static GameManager Instance;
+
+    public double CurrentBudget;
+    bool CourutineStarted;
     void Awake()
     {
         if (Instance == null)
@@ -22,6 +25,38 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(this);
+        }
+
+    }
+    void Update()
+    {
+        //if (Input.GetMouseButton(0))
+        //{
+        //    StopCoroutine(ResetTimer());
+        //    CourutineStarted = false;
+        //}
+        //else
+        //{
+        //    if(!CourutineStarted )
+        //    StartCoroutine(ResetTimer());
+        //}
+    }
+
+    IEnumerator ResetTimer()
+    {
+        CourutineStarted = true;
+        yield return new WaitForSeconds(10);
+        if(SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            SceneManager.LoadScene(0);
+            SelectedShoppingList = null;
+            CurrentBudget = 0;
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
+            SelectedShoppingList = null;
+            CurrentBudget = 0;
         }
     }
 }
