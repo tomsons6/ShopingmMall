@@ -95,7 +95,17 @@ public class MainMenuController : MonoBehaviour
     }
     public void SelectShoppingList(ShoppingList List)
     {
-        GameManager.Instance.SelectedShoppingList = List;
+
+        if(List.name == "FreeRoam")
+        {
+            GameManager.Instance.SelectedShoppingList = List;
+            GameManager.Instance.FreeRoam = true;
+        }
+        else
+        {
+            GameManager.Instance.SelectedShoppingList = List;
+            GameManager.Instance.FreeRoam = false;
+        }
     }
     public void LoadShopScene()
     {

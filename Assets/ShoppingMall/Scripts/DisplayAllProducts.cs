@@ -78,7 +78,15 @@ public class DisplayAllProducts : MonoBehaviour
     }
     public void Buy(Product product)
     {
-        SPManager.checkForBoughtProducts(product);
+        if (!GameManager.Instance.FreeRoam)
+        {
+            SPManager.checkForBoughtProducts(product);
+        }
+        else
+        {
+            SPManager.BuyFreeRoam(product);
+        }
+
     }
 }
 [System.Serializable]

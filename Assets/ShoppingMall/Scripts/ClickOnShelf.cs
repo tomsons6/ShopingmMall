@@ -34,6 +34,7 @@ public class ClickOnShelf : MonoBehaviour
             {
                 if (hit.transform.tag == "Shelf")
                 {
+                    ResetDisplay();
                     Screen1Camera.SetActive(true);
                     Screen1ProductDisplay.SetActive(true);
                     Screen2Camera.SetActive(true);
@@ -48,15 +49,19 @@ public class ClickOnShelf : MonoBehaviour
             {
                 //Screen1Camera.SetActive(false);
                 //Screen2Camera.SetActive(false);
-                DspAllProd.ResetDisplay();
-                foreach (GameObject go in DspAllProd.TempGoList)
-                {
-                    Destroy(go);
-                }
-                Screen1ProductDisplay.SetActive(false);
-                Screen2ProductDisplay.SetActive(false);
-                DspAllProd.TempGoList.Clear();
+                ResetDisplay();
             }
         }
+    }
+    void ResetDisplay()
+    {
+        DspAllProd.ResetDisplay();
+        foreach (GameObject go in DspAllProd.TempGoList)
+        {
+            Destroy(go);
+        }
+        Screen1ProductDisplay.SetActive(false);
+        Screen2ProductDisplay.SetActive(false);
+        DspAllProd.TempGoList.Clear();
     }
 }

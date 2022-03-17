@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     public double CurrentBudget;
     bool CourutineStarted;
+    public bool FreeRoam;
     void Awake()
     {
         if (Instance == null)

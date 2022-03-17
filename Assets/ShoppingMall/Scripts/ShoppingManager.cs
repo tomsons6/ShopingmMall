@@ -47,6 +47,12 @@ public class ShoppingManager : MonoBehaviour
             }
         }
     }
+
+    public void BuyFreeRoam(Product prod)
+    {
+        ShLDisp.FreeRoamShopListDisp(prod);
+        DecreaseBudget(prod);
+    }
     public void ButtonColorChange(Color color, Button button)
     {
         var Colors = button.colors;
