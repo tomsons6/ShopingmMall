@@ -7,7 +7,7 @@ public class RotateCamera : MonoBehaviour
     public float speed = 3.5f;
     float x;
     float y;
-    
+
     // Update is called once per frame
     void Update()
     {
