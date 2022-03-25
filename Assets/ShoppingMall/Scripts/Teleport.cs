@@ -29,6 +29,20 @@ public class Teleport : MonoBehaviour
 
             }
         }
+        if(Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).rawPosition);
+            Debug.DrawRay(Input.mousePosition, Vector3.forward, color: Color.green);
+            if (Physics.Raycast(ray, out hit, 1000.0f))
+            {
+                if (hit.transform.tag == "Teleport")
+                {
+                    StartCoroutine(MoveCamera(hit.transform));
+                }
+
+            }
+        }
     }
 
     IEnumerator MoveCamera(Transform clickedObject)
