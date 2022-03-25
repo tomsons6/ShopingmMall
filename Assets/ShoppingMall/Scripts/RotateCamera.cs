@@ -40,7 +40,7 @@ public class RotateCamera : MonoBehaviour
                 xAngleTemp = xAngle;
                 yAngleTemp = yAngle;
             }
-            if (Input.GetTouch(0).phase == TouchPhase.Ended){
+            if (Input.GetTouch(0).phase == TouchPhase.Moved){
                 SecondPoint = Input.GetTouch(0).position;
                 xAngle = xAngleTemp + (SecondPoint.x - FirstPoint.x) * 180 / Screen.width;
                 yAngle = yAngleTemp + (SecondPoint.y - FirstPoint.y) * 90 / Screen.height;
