@@ -29,7 +29,7 @@ public class Teleport : MonoBehaviour
 
             }
         }
-        if(Input.GetTouch(0).type == TouchType.Direct)
+        if(Input.touchCount >0)
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).rawPosition);
