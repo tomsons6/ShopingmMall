@@ -18,11 +18,11 @@ public class EndSceneController : MonoBehaviour
     {
         if(GameManager.Instance.CurrentBudget > 0)
         {
-            ResultText.text = "Congratulations you are within the budget. Your left over budget is - " + GameManager.Instance.CurrentBudget;
+            ResultText.text = "Congratulations you are within the budget. Your left over budget is = " + GameManager.Instance.CurrentBudget;
         }
         else
         {
-            ResultText.text = "Unfortunatly you over spent your budget. You overdrafted - " + GameManager.Instance.CurrentBudget;
+            ResultText.text = "Unfortunatly you over spent your budget. You overdrafted = " + GameManager.Instance.CurrentBudget;
         }
     }
 
