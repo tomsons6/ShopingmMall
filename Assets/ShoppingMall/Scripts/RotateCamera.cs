@@ -47,12 +47,12 @@ public class RotateCamera : MonoBehaviour
                 yAngle = -yAngleTemp + (SecondPoint.y - FirstPoint.y) * 90 / Screen.height;
                 this.transform.rotation = Quaternion.Euler(yAngle, xAngle, 0.0f);
             }
-            if (Input.GetTouch(0).phase == TouchPhase.Canceled)
-            {
-                yAngleTemp = 0;
-                xAngleTemp = 0;
+            //if (Input.GetTouch(0).phase == TouchPhase.Canceled)
+            //{
+            //    yAngleTemp = 0;
+            //    xAngleTemp = 0;
 
-            }
+            //}
         }
     }
 }
