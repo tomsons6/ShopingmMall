@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
+  m_Name: MarinatedGingerAji
+  m_EditorClassIdentifier: 
+  NameEng: Marinated ginger
+  NameLv: "Marin\u0113ts ingvers"
+  NameRus: "\u041C\u0430\u0440\u0438\u043D\u043E\u0432\u0430\u043D\u043D\u044B\u0439
+    \u0438\u043C\u0431\u0438\u0440\u044C"
+  DesctriptionEng: 190g Aji
+  DesctriptionRus: 190g Aji
+  DesctriptionLV: 190g Aji
+  Model: {fileID: 0}
+  ProductCategory: 33
+  price: 2.09
+  ProductCategoryImage: {fileID: 21300000, guid: 3cc9ca6a4a209f74ba76f31f7dc73034, type: 3}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
+  m_Name: WaterEverestLV
+  m_EditorClassIdentifier: 
+  NameEng: Water
+  NameLv: "\u016Adens"
+  NameRus: "\u0412\u043E\u0434\u0430"
+  DesctriptionEng: 1.5L Everest LV
+  DesctriptionRus: 1.5L Everest LV
+  DesctriptionLV: 1.5L Everest LV
+  Model: {fileID: 2872247952419144235, guid: c4caa4f13e2e7814789dda031b4f499e, type: 3}
+  ProductCategory: 23
+  price: 0.58
+  ProductCategoryImage: {fileID: 21300000, guid: 4be9858895aa55248805e0cda64f1aca, type: 3}
