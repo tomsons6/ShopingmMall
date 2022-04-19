@@ -22,7 +22,8 @@ public class ShoppingCartItem : MonoBehaviour
         {
             CheckIfItemBought TempCartItem = ShManager.ShoppingListCheck.Find(x => x.TakenProduct == CartItem);
             ShManager.IncreaseBudget(CartItem);
-            ShManager.ButtonColorChange(Color.red, GetComponent<Button>());
+            //ShManager.ButtonColorChange(Color.red, GetComponent<Button>());
+            ShManager.changeSprite(GetComponentsInChildren<Image>()[1], ShManager.RedCross);
             TempCartItem.IsBought = false;
             TempCartItem.TakenProduct = null;
             CartItem = null;

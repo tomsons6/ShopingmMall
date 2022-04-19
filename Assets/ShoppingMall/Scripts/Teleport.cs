@@ -6,10 +6,11 @@ public class Teleport : MonoBehaviour
 {
     [SerializeField]
     float movingspeed = 5f;
+    Camera Cam;
     // Start is called before the first frame update
     void Start()
     {
-
+        Cam = GetComponent<Camera>();
     }
 
     // Update is called once per frame
@@ -17,19 +18,30 @@ public class Teleport : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Debug.DrawRay(Input.mousePosition, Vector3.forward, color: Color.green);
-            if (Physics.Raycast(ray, out hit, 1000.0f))
+            Vector2 CursorPos = Input.mousePosition;
+            Vector3 DisplayMouse = Display.RelativeMouseAt(Input.mousePosition);
+            foreach(Display disp in Display.displays)
             {
-                if (hit.transform.tag == "Teleport")
-                {
-                    StartCoroutine(MoveCamera(hit.transform));
-                }
-
+                Debug.Log(disp);
             }
+
+            if(Cam.pixelRect.Contains(Input.mousePosition))
+            {
+                RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                Debug.DrawRay(Input.mousePosition, Vector3.forward, color: Color.green);
+                if (Physics.Raycast(ray, out hit, 1000.0f))
+                {
+                    if (hit.transform.tag == "Teleport")
+                    {
+                        StartCoroutine(MoveCamera(hit.transform));
+                    }
+
+                }
+            }
+
         }
-        if(Input.touchCount >0)
+        if(Input.touchCount >0 && Cam.pixelRect.Contains(Input.GetTouch(0).rawPosition))
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).rawPosition);

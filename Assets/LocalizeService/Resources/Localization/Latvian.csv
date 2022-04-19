@@ -1,0 +1,28 @@
+Id,Latvian
+title,Lokalizacijas serviss
+text,"Lokalizacijas kods and shits"
+autors,aurotrs
+localization1,Angliski
+localization2,Krieviski
+localization3,French
+localization4,Latviski
+back,Atpakaļ
+next,Tālāk
+instruction,Instrukcijas
+Budget,Budžets
+ShList,Iepirkumu saraksts
+7-10/1,Iepirkumu saraksts 1
+7-10/2,Iepirkumu saraksts 2
+7-10/3,Brīvais režīms
+10-15/1,Iepirkumu saraksts 1
+10-15/2,Iepirkumu saraksts 2
+10-15/3,Brīvais režīms
+15+/1,Iepirkumu saraksts 1
+15+/2,Iepirkumu saraksts 2
+15+/3,Brīvais režīms
+AgeQuestion,Cik tev gadu?
+ShelfDisp,Uzspied uz plaukta
+WonGame,Apsveicu Tu iekļāvies budžetā. Tavs atlikums - 
+LostGame,Diemžēl Tu neiekļāvies budžetā. Tu pārtērēji - 
+GotAllProducts,Tev izdevās atrast visus saraksta produktus.
+NotAllProducts,Tev neizdevās atrast visus saraksta produktus.

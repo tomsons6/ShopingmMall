@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
+  m_Name: LatvianOnion
+  m_EditorClassIdentifier: 
+  NameEng: Onion
+  NameLv: "S\u012Bpoli"
+  NameRus: "\u041B\u0443\u043A"
+  DesctriptionEng: 200g. Latvia
+  DesctriptionRus: "200g. \u041B\u0430\u0442\u0432\u0438\u044F"
+  DesctriptionLV: 200g. Latvija
+  Model: {fileID: 1768273210068193448, guid: cbdf7c7a458574a439e1ff120a280a70, type: 3}
+  ProductCategory: 5
+  price: 0.21
+  ProductCategoryImage: {fileID: 21300000, guid: 695c6861cd32464408d9ebd3010d8f30, type: 3}

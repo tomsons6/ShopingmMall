@@ -14,25 +14,27 @@ public class RotateCamera : MonoBehaviour
     float yAngle;
     float xAngleTemp;
     float yAngleTemp;
-
+    [SerializeField]
+    Camera Cam;
 
     void Start()
     {
         xAngle = 0;
         yAngle = 0;
         this.transform.rotation = Quaternion.Euler(yAngle, xAngle, 0);
+        Cam = GetComponent<Camera>();
     }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && Cam.pixelRect.Contains(Input.mousePosition))
         {
             transform.Rotate(new Vector3(Input.GetAxis("Mouse Y") * speed, -Input.GetAxis("Mouse X") * speed, 0));
             x = transform.rotation.eulerAngles.x;
             y = transform.rotation.eulerAngles.y;
             transform.rotation = Quaternion.Euler(x, y, 0);
         }
-        if (Input.touchCount > 0)
+        if (Input.touchCount > 0 && Cam.pixelRect.Contains(Input.GetTouch(0).position))
         {
             if (Input.GetTouch(0).phase == TouchPhase.Began)
             {

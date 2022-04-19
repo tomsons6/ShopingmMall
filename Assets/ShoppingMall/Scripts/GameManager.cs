@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     public double CurrentBudget;
+    public bool GotAllProducts;
     bool CourutineStarted;
     public bool FreeRoam;
     void Awake()
@@ -52,12 +53,14 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(0);
             SelectedShoppingList = null;
             CurrentBudget = 0;
+            GotAllProducts = false;
         }
         else
         {
             SceneManager.LoadScene(0);
             SelectedShoppingList = null;
             CurrentBudget = 0;
+            GotAllProducts = false;
         }
     }
 }

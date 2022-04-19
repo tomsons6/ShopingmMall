@@ -6,4 +6,5 @@ public class CategoryInfo : MonoBehaviour
 {
 
     public Product.Category categoryInfo;
+
 }

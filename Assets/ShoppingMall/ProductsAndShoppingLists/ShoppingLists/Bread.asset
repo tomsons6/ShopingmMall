@@ -12,5 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c103457bbe557f7468aca1a6b3f50fd2, type: 3}
   m_Name: Bread
   m_EditorClassIdentifier: 
-  Budget: 10
-  ShoppingListProducts: 00000000010000000100000000000000
+  Budget: 0
+  ShoppingListProducts:
+  - ShoppingListProduct: 0
+    ListItemImage: {fileID: 21300000, guid: e7bf3f01e8cd4204da8dbf39a77fa5d0, type: 3}
+  - ShoppingListProduct: 1
+    ListItemImage: {fileID: 21300000, guid: 578636a865c604944a5082f42a41c7dd, type: 3}
+  - ShoppingListProduct: 1
+    ListItemImage: {fileID: 21300000, guid: 578636a865c604944a5082f42a41c7dd, type: 3}
+  - ShoppingListProduct: 0
+    ListItemImage: {fileID: 21300000, guid: e7bf3f01e8cd4204da8dbf39a77fa5d0, type: 3}

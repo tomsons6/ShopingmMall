@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
+  m_Name: TinTomatoRimi
+  m_EditorClassIdentifier: 
+  NameEng: Canned Tomatoes
+  NameLv: "Konserv\u0113ti tom\u0101ti gabali\u0146os"
+  NameRus: "\u043A\u043E\u043D\u0441\u0435\u0440\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435
+    \u043F\u043E\u043C\u0438\u0434\u043E\u0440\u044B"
+  DesctriptionEng: 400g. Rimi
+  DesctriptionRus: "400g. \u0420\u0438\u043C\u0438"
+  DesctriptionLV: 400g. Rimi
+  Model: {fileID: 919132149155446097, guid: bf77c088349a5ed43bc89ed80207c106, type: 3}
+  ProductCategory: 10
+  price: 0.72
+  ProductCategoryImage: {fileID: 21300000, guid: 5078acda879ecc6498855d1f8fcb8364, type: 3}

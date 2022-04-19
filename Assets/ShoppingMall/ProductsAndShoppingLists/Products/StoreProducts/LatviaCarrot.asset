@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
+  m_Name: LatviaCarrot
+  m_EditorClassIdentifier: 
+  NameEng: Carrot
+  NameLv: "Burk\u0101ni"
+  NameRus: "\u041C\u043E\u0440\u043A\u043E\u0432\u044C"
+  DesctriptionEng: 100g. Latvia
+  DesctriptionRus: "100g. \u041B\u0430\u0442\u0432\u0438\u044F"
+  DesctriptionLV: 100g. Latvija
+  Model: {fileID: 148850, guid: 95d3e42a2d62d5d4999c13f17d05486e, type: 3}
+  ProductCategory: 7
+  price: 0.118
+  ProductCategoryImage: {fileID: 21300000, guid: dd7e195fb33207f4a85000a471544afd, type: 3}

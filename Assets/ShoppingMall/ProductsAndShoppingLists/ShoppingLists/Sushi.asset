@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c103457bbe557f7468aca1a6b3f50fd2, type: 3}
+  m_Name: Sushi
+  m_EditorClassIdentifier: 
+  Budget: 38
+  ShoppingListProducts:
+  - ShoppingListProduct: 21
+    ListItemImage: {fileID: 21300000, guid: 27190246a564efe46a1f9f686e242a4c, type: 3}
+  - ShoppingListProduct: 22
+    ListItemImage: {fileID: 21300000, guid: 33f19e43641ac03459d84e344b7ab25f, type: 3}
+  - ShoppingListProduct: 23
+    ListItemImage: {fileID: 21300000, guid: 4be9858895aa55248805e0cda64f1aca, type: 3}
+  - ShoppingListProduct: 24
+    ListItemImage: {fileID: 21300000, guid: 370bc82ccbf2d9a4cac895f4cfecacb1, type: 3}
+  - ShoppingListProduct: 25
+    ListItemImage: {fileID: 21300000, guid: a30ddba5dba193048bd6418ed7613aa8, type: 3}
+  - ShoppingListProduct: 26
+    ListItemImage: {fileID: 21300000, guid: 9a2e4e608f9be204da1b493e3fbc9233, type: 3}
+  - ShoppingListProduct: 27
+    ListItemImage: {fileID: 21300000, guid: fb39b8dd069314d4587801bcc9878240, type: 3}
+  - ShoppingListProduct: 28
+    ListItemImage: {fileID: 21300000, guid: 030341a91e3a45346be971db173dc4e6, type: 3}
+  - ShoppingListProduct: 29
+    ListItemImage: {fileID: 21300000, guid: ce414bfa2b689a9429a8e9bfd82fdd1f, type: 3}
+  - ShoppingListProduct: 30
+    ListItemImage: {fileID: 21300000, guid: c2f2758ae2b8f604d8fb290ffee418b9, type: 3}
+  - ShoppingListProduct: 31
+    ListItemImage: {fileID: 21300000, guid: 2451d1a4ed4db494aa85f22144b3e120, type: 3}
+  - ShoppingListProduct: 32
+    ListItemImage: {fileID: 21300000, guid: baed6e9c2fd7aa34d9de6cba03a9f42e, type: 3}
+  - ShoppingListProduct: 33
+    ListItemImage: {fileID: 21300000, guid: 3cc9ca6a4a209f74ba76f31f7dc73034, type: 3}
+  - ShoppingListProduct: 34
+    ListItemImage: {fileID: 21300000, guid: 7fa4ce003ec37bd4b91771252b25c4c0, type: 3}

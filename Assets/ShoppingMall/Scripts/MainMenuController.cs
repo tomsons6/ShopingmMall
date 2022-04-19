@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Mirror;
 using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
@@ -21,14 +20,14 @@ public class MainMenuController : MonoBehaviour
     void Start()
     {
         GameManager.Instance.CurrentBudget = 0;
-        foreach(Transform child in transform)
+        foreach (Transform child in transform)
         {
-            if(child.GetComponent<PanelId>() != null)
+            if (child.GetComponent<PanelId>() != null)
             {
                 PanelObjects.Add(child.GetComponent<PanelId>());
             }
         }
-        foreach(PanelId Panel in PanelObjects)
+        foreach (PanelId Panel in PanelObjects)
         {
             if (Panel.ID == MenuId.ClickToStart)
             {
@@ -44,12 +43,12 @@ public class MainMenuController : MonoBehaviour
 
     public void setActivePanel(int ID)
     {
-        foreach(PanelId Panel in PanelObjects)
+        foreach (PanelId Panel in PanelObjects)
         {
             if (Panel.ID == (MenuId)ID)
             {
                 Panel.gameObject.SetActive(true);
-                if(Panel.ID == MenuId.Age10 || Panel.ID == MenuId.Age15 || Panel.ID == MenuId.Age7)
+                if (Panel.ID == MenuId.Age10 || Panel.ID == MenuId.Age15 || Panel.ID == MenuId.Age7)
                 {
                     BackButtonID = (int)Panel.ID;
                 }
@@ -61,24 +60,28 @@ public class MainMenuController : MonoBehaviour
         }
         if (ID == 7)
         {
-            int numb = 0;
-            if (GameManager.Instance.SelectedShoppingList != null)
-            {
-                foreach (Product.Category prod in GameManager.Instance.SelectedShoppingList.ShoppingListProducts)
-                {
-                    numb++;
-                    ShoppingListField.text += "\n" + numb + ". " + prod.ToString();
-                }
-            }
-            Budget.text = "Budget = " + GameManager.Instance.SelectedShoppingList.Budget;
+            ShoppingListLanguageChange();
         }
         else
         {
             ShoppingListField.text = "";
         }
-
     }
 
+    public void ShoppingListLanguageChange()
+    {
+        ShoppingListField.text = "";
+        int numb = 0;
+        if (GameManager.Instance.SelectedShoppingList != null)
+        {
+            foreach (ShoppingListItem prod in GameManager.Instance.SelectedShoppingList.ShoppingListProducts)
+            {
+                numb++;
+                ShoppingListField.text += "\n" + numb + ". " + prod.localLanguage(prod.ShoppingListProduct);
+            }
+        }
+        Budget.text = " = " + GameManager.Instance.SelectedShoppingList.Budget;
+    }
     public void BackToSpecificPanel()
     {
         foreach (PanelId Panel in PanelObjects)
@@ -96,7 +99,7 @@ public class MainMenuController : MonoBehaviour
     public void SelectShoppingList(ShoppingList List)
     {
 
-        if(List.name == "FreeRoam")
+        if (List.name == "FreeRoam")
         {
             GameManager.Instance.SelectedShoppingList = List;
             GameManager.Instance.FreeRoam = true;
@@ -110,6 +113,6 @@ public class MainMenuController : MonoBehaviour
     public void LoadShopScene()
     {
         SceneManager.LoadScene("ShopScene");
-        
+
     }
 }

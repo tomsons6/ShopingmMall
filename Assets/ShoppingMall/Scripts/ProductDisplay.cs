@@ -23,13 +23,13 @@ public class ProductDisplay : MonoBehaviour
     public GameObject TempGo;
     public void ShowProductInfo(Product product)
     {
-        ProductName.text = product.Name;
+        ProductName.text = product.NameTranslate();
         TempGo = Instantiate(product.Model);
         TempGo.AddComponent<RotateProduct>();
         TempGo.transform.parent = ProductModel.transform;
         TempGo.transform.localPosition = new Vector3(0f, -100f, 0f);
         TempGo.transform.localScale = new Vector3(500f, 500f, 500f);
-        ProductDesctription.text = product.Desctription;
+        ProductDesctription.text = product.DescriptionTranslate();
         ProductPrice.text = "Price = " + product.price.ToString();
     }
 }

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
+  m_Name: Vegetable3
+  m_EditorClassIdentifier: 
+  NameEng: Vegetable3
+  NameLv: "D\u0101rzenis3"
+  NameRus: "\u041E\u0432\u043E\u04493"
+  DesctriptionEng: Vegetable3
+  DesctriptionRus: "\u041E\u0432\u043E\u04493"
+  DesctriptionLV: "D\u0101rzenis3"
+  Model: {fileID: 166880, guid: f88835216ca6b48439c43e07ddb90e50, type: 3}
+  ProductCategory: 3
+  price: 1.2
+  GreenTick: {fileID: 21300000, guid: aafdad87f50e7584d85f377fd8e8397a, type: 3}
+  RedCross: {fileID: 21300000, guid: 88468d90848f8c94dbea6bfce55c317e, type: 3}

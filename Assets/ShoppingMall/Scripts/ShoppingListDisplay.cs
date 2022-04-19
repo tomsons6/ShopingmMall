@@ -11,18 +11,23 @@ public class ShoppingListDisplay : MonoBehaviour
     public GameObject CategoryRoot;
 
     public List<GameObject> SPListButtons;
+    public ShoppingManager ShManager;
     // Start is called before the first frame update
     void Start()
     {
+        ShManager = GameObject.FindGameObjectWithTag("ShopManager").GetComponent<ShoppingManager>();
         if (!GameManager.Instance.FreeRoam)
         {
             ProdList = GameManager.Instance.SelectedShoppingList;
-            foreach (Product.Category cat in ProdList.ShoppingListProducts)
+            foreach (ShoppingListItem cat in ProdList.ShoppingListProducts)
             {
                 GameObject TempObj = Instantiate(CategoryDisplay, CategoryRoot.transform);
-                TempObj.GetComponent<ShoppingCartItem>().CategoryInfo = cat;
+                TempObj.GetComponent<ShoppingCartItem>().CategoryInfo = cat.ShoppingListProduct;
                 SPListButtons.Add(TempObj);
-                TempObj.GetComponentInChildren<Text>().text = cat.ToString();
+                TempObj.GetComponentsInChildren<Image>()[1].sprite = ShManager.RedCross;
+                TempObj.GetComponent<Image>().sprite = cat.ListItemImage;
+
+                TempObj.GetComponentInChildren<Text>().text = cat.localLanguage(cat.ShoppingListProduct);
 
             }
         }
@@ -32,6 +37,7 @@ public class ShoppingListDisplay : MonoBehaviour
         GameObject TempGo = Instantiate(CategoryDisplay, CategoryRoot.transform);
         TempGo.GetComponent<ShoppingCartItem>().CategoryInfo = prod.ProductCategory;
         TempGo.GetComponent<ShoppingCartItem>().CartItem = prod;
+        TempGo.GetComponentInChildren<Image>().sprite = prod.ProductCategoryImage;
         SPListButtons.Add(TempGo);
         TempGo.GetComponentInChildren<Text>().text = prod.ProductCategory.ToString();
     }

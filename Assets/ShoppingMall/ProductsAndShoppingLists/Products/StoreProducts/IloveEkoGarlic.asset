@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
+  m_Name: IloveEkoGarlic
+  m_EditorClassIdentifier: 
+  NameEng: Garlic
+  NameLv: "\u0136iploki"
+  NameRus: "\u0427\u0435\u0441\u043D\u043E\u043A"
+  DesctriptionEng: 200g. I love eco
+  DesctriptionRus: 200g. I love eco
+  DesctriptionLV: 200g. I love eco
+  Model: {fileID: 6502948382388293737, guid: 12cc23afa9bcf6440aca0631fd106c89, type: 3}
+  ProductCategory: 6
+  price: 2.18
+  ProductCategoryImage: {fileID: 21300000, guid: 13fd753b530ae1248ab617d4f61a6314, type: 3}
