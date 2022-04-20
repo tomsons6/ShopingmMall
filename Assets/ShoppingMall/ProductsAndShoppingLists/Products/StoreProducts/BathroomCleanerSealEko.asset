@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
+  m_Name: BathroomCleanerSealEko
+  m_EditorClassIdentifier: 
+  NameEng: Bathroom cleaner
+  NameLv: "vannas istabas t\u012Br\u012B\u0161anas l\u012Bdzeklis"
+  NameRus: "\u043E\u0447\u0438\u0441\u0442\u0438\u0442\u0435\u043B\u044C \u0432\u0430\u043D\u043D\u043E\u0439
+    \u043A\u043E\u043C\u043D\u0430\u0442\u044B"
+  DesctriptionEng: 750ml Seal eko LV
+  DesctriptionRus: 750ml Seal eko LV
+  DesctriptionLV: 750ml Seal eko LV
+  Model: {fileID: 1048381340665103817, guid: 3b51683b419832f4e85734b0b1f2092c, type: 3}
+  ProductCategory: 38
+  price: 2.65
+  ProductCategoryImage: {fileID: 21300000, guid: c07035fbda70ff546b72087c26e311b4, type: 3}

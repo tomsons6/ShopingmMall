@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
+  m_Name: FlourHerkulessEko
+  m_EditorClassIdentifier: 
+  NameEng: Flour
+  NameLv: Milti
+  NameRus: "\u041F\u043E\u0440\u043E\u0448\u043E\u043A"
+  DesctriptionEng: 1kg Herkuless Eko LT
+  DesctriptionRus: "1kg \u0413\u0435\u0440\u043A\u0443\u043B\u0435\u0441\u0441 \u042D\u043A\u043E
+    \u041B\u0422"
+  DesctriptionLV: 1kg Herkuless Eko LT
+  Model: {fileID: 6045029794892082819, guid: e5d09de59e2fece48919bc8f72b246c0, type: 3}
+  ProductCategory: 44
+  price: 3.59
+  ProductCategoryImage: {fileID: 21300000, guid: 57473b695cb426b49978c5a545e8b405, type: 3}
