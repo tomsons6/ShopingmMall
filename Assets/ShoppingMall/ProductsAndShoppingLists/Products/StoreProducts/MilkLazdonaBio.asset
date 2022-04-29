@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
+  m_Name: MilkLazdonaBio
+  m_EditorClassIdentifier: 
+  NameEng: Milk
+  NameLv: Piens
+  NameRus: "\u041C\u043E\u043B\u043E\u043A\u043E"
+  DesctriptionEng: 1.5l Lazdona Bio LV
+  DesctriptionRus: "1.5l \u041B\u0430\u0437\u0434\u043E\u043D\u0430 \u0411\u0438\u043E
+    \u041B\u0412"
+  DesctriptionLV: 1.5l Lazdona Bio LV
+  Model: {fileID: 132172, guid: d07fe8d2ce9ee3544b59eb73ea694f6a, type: 3}
+  ProductCategory: 0
+  price: 1.28
+  ProductCategoryImage: {fileID: 21300000, guid: 263da01762d2fec4695964db4d548f6f, type: 3}
