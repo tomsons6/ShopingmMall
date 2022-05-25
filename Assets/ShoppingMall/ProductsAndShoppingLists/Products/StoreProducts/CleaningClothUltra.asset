@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 3gb Ultra
   DesctriptionRus: 3gb Ultra
   DesctriptionLV: 3gb Ultra
-  Model: {fileID: 8747843880652672874, guid: e19d90595be869646904af2d4ccaba7a, type: 3}
+  Model: {fileID: 0}
   ProductCategory: 35
   price: 3.49
-  ProductCategoryImage: {fileID: 21300000, guid: 031d98fd5c9bf26498d92822bc6b980c, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: 741669ecd50003045bc3aa4aaef2cd44, type: 3}
+  quantity: 0
+  quantityUnit: 

@@ -11,18 +11,21 @@ next,Tālāk
 instruction,Instrukcijas
 Budget,Budžets
 ShList,Iepirkumu saraksts
-7-10/1,Iepirkumu saraksts 1
-7-10/2,Iepirkumu saraksts 2
+7-10/1,Putnu būris
+7-10/2,Biezpiena pankūkas
 7-10/3,Brīvais režīms
-10-15/1,Iepirkumu saraksts 1
-10-15/2,Iepirkumu saraksts 2
+10-15/1,Pasta ar boloņas mērci
+10-15/2,Atjaunot saimniecības preču krājumus
 10-15/3,Brīvais režīms
-15+/1,Iepirkumu saraksts 1
-15+/2,Iepirkumu saraksts 2
+15+/1,Iztīrīt māju
+15+/2,Suši
 15+/3,Brīvais režīms
 AgeQuestion,Cik tev gadu?
 ShelfDisp,Uzspied uz plaukta
-WonGame,Apsveicu Tu iekļāvies budžetā. Tavs atlikums - 
-LostGame,Diemžēl Tu neiekļāvies budžetā. Tu pārtērēji - 
+WonGame,Apsveicu Tu iekļāvies budžetā. Tavs atlikums = 
+LostGame,Diemžēl Tu neiekļāvies budžetā. Tu pārtērēji = 
 GotAllProducts,Tev izdevās atrast visus saraksta produktus.
 NotAllProducts,Tev neizdevās atrast visus saraksta produktus.
+InstructionPanel,Pastaigājieties pa veikalu pieskaroties zaļajiem apļiem uz zemes. Meklējiet produktus kas ir jūsu iepirkumu sarakstā. Pieskarieties plauktiem lai redzētu pieejamos produktus. Speid uz nopirkt kad esi gatavs pirkt.
+ShoppingListInstruction, Atceries \n\n Tavs uzdevums ir izmantojot pieejamo naudu jeb budžetu nopirt visu kas nepiecies Tevis izvēlētajam produktam. \n\n Droši izmanto viedtālruni lai kalkulatorā reķiņātu līdzi. \n\n Nekautrējies jautāt pēc palīdzības izvēloties izdevīgāko produktu.
+TextTitle,Lielveikals

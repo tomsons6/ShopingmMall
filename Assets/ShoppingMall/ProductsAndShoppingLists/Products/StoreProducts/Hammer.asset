@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 1gb
   DesctriptionRus: 1gb
   DesctriptionLV: 1gb
-  Model: {fileID: 0}
+  Model: {fileID: 919132149155446097, guid: dda971163cd0a71408ae7b7d7ac9a977, type: 3}
   ProductCategory: 49
   price: 2.69
-  ProductCategoryImage: {fileID: 21300000, guid: aa310b37c31857449ad15cba54ec4838, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: c5db242cdd1fb4546a767c1dd2aa7cdd, type: 3}
+  quantity: 1
+  quantityUnit: gb

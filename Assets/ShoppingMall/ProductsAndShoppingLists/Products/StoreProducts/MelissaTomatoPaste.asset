@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 500g. Melissa
   DesctriptionRus: "500\u0433. \u041C\u0435\u043B\u0438\u0441\u0441\u0430"
   DesctriptionLV: 500g. Melissa
-  Model: {fileID: 919132149155446097, guid: d6367f7a190a6324385b6d5f6e2a8981, type: 3}
+  Model: {fileID: 5083096420755560046, guid: e4509b998b40f18469a505e33bf0d108, type: 3}
   ProductCategory: 9
   price: 0.97
-  ProductCategoryImage: {fileID: 21300000, guid: 7b180b78f54d5b940ab27c850753daad, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: bda3bd87b74d2234faf613e5044482b7, type: 3}
+  quantity: 0
+  quantityUnit: 

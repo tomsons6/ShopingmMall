@@ -21,7 +21,7 @@ public class LocalizationToggle : MonoBehaviour
         RusToggle.onValueChanged.AddListener(onSetRussian);
         EngToggle.onValueChanged.AddListener(onSetEnglish);
 
-        CheckLocalization();
+        //CheckLocalization();
         MainMenuController = GetComponent<MainMenuController>();
     }
 

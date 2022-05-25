@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
+  m_Name: Nails - Copy (3)
+  m_EditorClassIdentifier: 
+  NameEng: Nails
+  NameLv: Naglas
+  NameRus: "\u0413\u0432\u043E\u0437\u0434\u0438"
+  DesctriptionEng: 10gb
+  DesctriptionRus: 10gb
+  DesctriptionLV: 10gb
+  Model: {fileID: 2754280397803748991, guid: f0d461718c8bc0d4d88cdf8a1576135d, type: 3}
+  ProductCategory: 3
+  price: 0.08
+  ProductCategoryImage: {fileID: 21300000, guid: 1e8990d1f470aa644913e9b06f58e328, type: 3}
+  quantity: 10
+  quantityUnit: gb

@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46de01c3087585489611cc4e7e5d73f, type: 3}
   m_Name: BroomActiveMax - Copy (2)
   m_EditorClassIdentifier: 
-  NameEng: 
-  NameLv: 
-  NameRus: 
-  DesctriptionEng: 
-  DesctriptionRus: 
-  DesctriptionLV: 
-  Model: {fileID: 0}
-  ProductCategory: 0
-  price: 0
-  ProductCategoryImage: {fileID: 0}
+  NameEng: Broom
+  NameLv: Slota
+  NameRus: "\u043C\u0435\u0442\u043B\u0430"
+  DesctriptionEng: 1gb Activemax
+  DesctriptionRus: 1gb Activemax
+  DesctriptionLV: 1gb Activemax
+  Model: {fileID: 100000, guid: e681d527ae31b3a49a62e0c2668e3587, type: 3}
+  ProductCategory: 36
+  price: 16.49
+  ProductCategoryImage: {fileID: 21300000, guid: bad0ba4cbb47c0b48941e9d407da766a, type: 3}
+  quantity: 0
+  quantityUnit: 

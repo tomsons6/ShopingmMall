@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 400g. Rimi
   DesctriptionRus: "400g. \u0420\u0438\u043C\u0438"
   DesctriptionLV: 400g. Rimi
-  Model: {fileID: 1654889541037045802, guid: e873c551b173cc74ca58985ac9b506c5, type: 3}
+  Model: {fileID: 1985144608774104, guid: e95ef25578a7dbf40b6da5581ace9ce6, type: 3}
   ProductCategory: 15
   price: 0.33
-  ProductCategoryImage: {fileID: 21300000, guid: b21ebc1a25213bd498cd34a81875d4a7, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: bf5c9f9deee809c42b2c49bbd0c6a06a, type: 3}
+  quantity: 0
+  quantityUnit: 

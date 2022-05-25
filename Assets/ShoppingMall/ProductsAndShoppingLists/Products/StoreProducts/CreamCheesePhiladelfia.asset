@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: '200g. Philadelfia '
   DesctriptionRus: '200g. Philadelfia '
   DesctriptionLV: '200g. Philadelfia '
-  Model: {fileID: 5228249097378804448, guid: 41b9c82b0d70c7240b2379152a88fe14, type: 3}
+  Model: {fileID: 83884929394130055, guid: b75a639de963cc44796432df9decd17f, type: 3}
   ProductCategory: 29
   price: 2.55
-  ProductCategoryImage: {fileID: 21300000, guid: ce414bfa2b689a9429a8e9bfd82fdd1f, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: 0d2f59fbb2358ff46b01763f933dd354, type: 3}
+  quantity: 0
+  quantityUnit: 

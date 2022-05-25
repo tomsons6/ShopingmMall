@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 500g Rimi sugar
   DesctriptionRus: "500g \u0441\u0430\u0445\u0430\u0440\u0430 \u0420\u0438\u043C\u0438"
   DesctriptionLV: 500g Rimi cukurs
-  Model: {fileID: 189822584283905273, guid: 8e356eef40e7f8140a0fc6883563a2db, type: 3}
+  Model: {fileID: 7498320434925391040, guid: 21e9042a56403e741850e680123f110a, type: 3}
   ProductCategory: 46
   price: 0.395
-  ProductCategoryImage: {fileID: 21300000, guid: cf8a896aeb5350743a75092034e8945e, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: 73c7d8625b7efa642974748be88825ec, type: 3}
+  quantity: 0
+  quantityUnit: 

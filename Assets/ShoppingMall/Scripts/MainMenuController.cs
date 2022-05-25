@@ -9,7 +9,8 @@ public class MainMenuController : MonoBehaviour
     public enum MenuId { ClickToStart = 1, ChoseAge = 2, Age7 = 3, Age10 = 4, Age15 = 5, Instructions = 6, ShoppingList = 7 };
     [SerializeField]
     List<PanelId> PanelObjects;
-
+    [SerializeField]
+    GameObject LocalizationUI;
     [SerializeField]
     int BackButtonID;
     [SerializeField]
@@ -67,7 +68,17 @@ public class MainMenuController : MonoBehaviour
             ShoppingListField.text = "";
         }
     }
-
+    public void ShowHideLocalizationUI(int ID)
+    {
+        if(ID == 1)
+        {
+            LocalizationUI.SetActive(false);
+        }
+        else
+        {
+            LocalizationUI.SetActive(true);
+        }
+    }
     public void ShoppingListLanguageChange()
     {
         ShoppingListField.text = "";
@@ -77,7 +88,7 @@ public class MainMenuController : MonoBehaviour
             foreach (ShoppingListItem prod in GameManager.Instance.SelectedShoppingList.ShoppingListProducts)
             {
                 numb++;
-                ShoppingListField.text += "\n" + numb + ". " + prod.localLanguage(prod.ShoppingListProduct);
+                ShoppingListField.text += "\n" + numb + ". " + prod.localLanguage(prod.ShoppingListProduct) + " - " + prod.Quantity.ToString() + " " + prod.QuantityUnit;
             }
         }
         Budget.text = " = " + GameManager.Instance.SelectedShoppingList.Budget;

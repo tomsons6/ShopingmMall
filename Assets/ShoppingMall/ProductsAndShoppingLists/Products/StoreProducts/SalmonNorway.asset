@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 200g. Norway
   DesctriptionRus: "200g. \u041D\u043E\u0440\u0432\u0435\u0433\u0438\u044F"
   DesctriptionLV: "200g. Norv\u0113\u0123ija"
-  Model: {fileID: 0}
+  Model: {fileID: 7967136909380765644, guid: 375e58feb62549d4cb8df050fa0f8a77, type: 3}
   ProductCategory: 24
   price: 3.83
-  ProductCategoryImage: {fileID: 21300000, guid: 370bc82ccbf2d9a4cac895f4cfecacb1, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: 8beb14d1152fe964c83af916c46f59f8, type: 3}
+  quantity: 0
+  quantityUnit: 

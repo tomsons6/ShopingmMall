@@ -11,18 +11,21 @@ next,Next
 instruction,Instructions
 Budget,Budget
 ShList,Shopping List
-7-10/1,Shopping list 1
-7-10/2,Shopping list 2
+7-10/1,Bird house
+7-10/2,Cottage cheese pancakes
 7-10/3,FreeRoam
-10-15/1,Shopping list 1
-10-15/2,Shopping list 2
+10-15/1,spaghetti bolognese
+10-15/2,Renew Cleaning supplies
 10-15/3,FreeRoam
-15+/1,Shopping list 1
-15+/2,Shopping list 2
+15+/1,Cleaning the house
+15+/2,Sushi
 15+/3,FreeRoam
 AgeQuestion,How old are you?
 ShelfDisp,Click on shelf
-WonGame,Congratulations you are within the budget. Your left over budget is - 
-LostGame,Unfortunatly you over spent your budget. You overdrafted - 
+WonGame,Congratulations you are within the budget. Your left over budget is = 
+LostGame,Unfortunatly you over spent your budget. You overdrafted = 
 GotAllProducts,You managed to find all necessary products.
 NotAllProducts,You did not manage to find all necessary products.
+InstructionPanel,Walk around the store by tapping the green circles on the ground. Look for the products that are in your shopping list. Tap on the shelfs to see the availible products. Tap on checkout when you are ready to buy.
+ShoppingListInstruction, Remember \n\n Your task is to use the available money or budget to buy everything you need for the product of your choice. \n\n Safely uses the smartphone to report to the calculator. \n\n Feel free to ask for help choosing the best product.
+TextTitle,ShoppingMall

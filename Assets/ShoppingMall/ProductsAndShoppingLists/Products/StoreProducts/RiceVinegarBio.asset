@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 1L. Bio
   DesctriptionRus: 1L. Bio
   DesctriptionLV: 1L. Bio
-  Model: {fileID: 0}
+  Model: {fileID: 1699967604347124, guid: d06f309093bd2864f9ee2b6925cbfbe8, type: 3}
   ProductCategory: 22
   price: 1.79
-  ProductCategoryImage: {fileID: 21300000, guid: 33f19e43641ac03459d84e344b7ab25f, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: c68f700d8e6e03c4c99b0f34a1919ec8, type: 3}
+  quantity: 0
+  quantityUnit: 

@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 750ml Kvadro LV
   DesctriptionRus: 750ml Kvadro LV
   DesctriptionLV: 750ml Kvadro LV
-  Model: {fileID: 0}
+  Model: {fileID: 1048381340665103817, guid: 3b51683b419832f4e85734b0b1f2092c, type: 3}
   ProductCategory: 39
   price: 2.79
-  ProductCategoryImage: {fileID: 21300000, guid: b2079623da8b4b349ab24f9c1846ee1a, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: 1b4cbf584b264c34a900ee6fd03b0556, type: 3}
+  quantity: 0
+  quantityUnit: 

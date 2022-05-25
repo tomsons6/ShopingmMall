@@ -46,3 +46,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Checkout
+    uniqueID: 3823413051
+    locked: 0

@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 400g. I love eko
   DesctriptionRus: 400g. I love eko
   DesctriptionLV: 400g. I love eko
-  Model: {fileID: 8487822268470002715, guid: 2ffb446c5e43dd447af0a240ccb79385, type: 3}
+  Model: {fileID: 1985144608774104, guid: e95ef25578a7dbf40b6da5581ace9ce6, type: 3}
   ProductCategory: 15
   price: 3.19
-  ProductCategoryImage: {fileID: 21300000, guid: b21ebc1a25213bd498cd34a81875d4a7, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: bf5c9f9deee809c42b2c49bbd0c6a06a, type: 3}
+  quantity: 0
+  quantityUnit: 

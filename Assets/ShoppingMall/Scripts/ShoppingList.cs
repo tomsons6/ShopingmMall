@@ -14,6 +14,8 @@ public class ShoppingListItem
 {
     public Product.Category ShoppingListProduct;
     public Sprite ListItemImage;
+    public double Quantity;
+    public string QuantityUnit;
 
     public string localLanguage(Product.Category cat)
     {

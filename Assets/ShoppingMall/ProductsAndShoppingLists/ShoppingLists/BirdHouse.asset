@@ -15,10 +15,18 @@ MonoBehaviour:
   Budget: 10
   ShoppingListProducts:
   - ShoppingListProduct: 3
-    ListItemImage: {fileID: 21300000, guid: 0c238089e5dd35a47b1b969b82ad57ca, type: 3}
+    ListItemImage: {fileID: 21300000, guid: 1e8990d1f470aa644913e9b06f58e328, type: 3}
+    Quantity: 10
+    QuantityUnit: gb
   - ShoppingListProduct: 3
-    ListItemImage: {fileID: 21300000, guid: 0c238089e5dd35a47b1b969b82ad57ca, type: 3}
+    ListItemImage: {fileID: 21300000, guid: 1e8990d1f470aa644913e9b06f58e328, type: 3}
+    Quantity: 10
+    QuantityUnit: gb
   - ShoppingListProduct: 2
-    ListItemImage: {fileID: 21300000, guid: 27b9880873ab765469dff29157ea26e5, type: 3}
+    ListItemImage: {fileID: 21300000, guid: 280e189d751aefe45b3fc2bbfc8be580, type: 3}
+    Quantity: 1
+    QuantityUnit: gb
   - ShoppingListProduct: 49
-    ListItemImage: {fileID: 21300000, guid: aa310b37c31857449ad15cba54ec4838, type: 3}
+    ListItemImage: {fileID: 21300000, guid: c5db242cdd1fb4546a767c1dd2aa7cdd, type: 3}
+    Quantity: 1
+    QuantityUnit: gb

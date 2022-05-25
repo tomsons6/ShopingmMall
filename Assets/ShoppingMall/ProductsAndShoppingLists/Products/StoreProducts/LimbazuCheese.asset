@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: "200g. Limba\u017EiLV"
   DesctriptionRus: "200g. \u041B\u0438\u043C\u0431\u0430\u0436\u0438 \u041B.\u0412."
   DesctriptionLV: "200g. Limba\u017EiLV"
-  Model: {fileID: 7324317022562452100, guid: d95be38afc74ad341961c8b9c718df38, type: 3}
+  Model: {fileID: 1032004259652541526, guid: 34e33a767ff4c3e41aad6a700b3aba11, type: 3}
   ProductCategory: 16
   price: 2.39
-  ProductCategoryImage: {fileID: 21300000, guid: 3605810d56b7eb046a56b5307f15c89e, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: bdcb92ee2ef2f2b4eb1bce03ee76e65a, type: 3}
+  quantity: 0
+  quantityUnit: 

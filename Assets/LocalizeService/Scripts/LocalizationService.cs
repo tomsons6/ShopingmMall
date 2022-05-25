@@ -8,7 +8,7 @@ namespace Localization
 {
 	public class LocalizationService : MonoSingleton<LocalizationService>
 	{
-		private const string DefaultLocalizationName = "English";
+		private const string DefaultLocalizationName = "Latvian";
 		public static string LocalizationPath = "Localization/";
 
         public LocalizationService instance;

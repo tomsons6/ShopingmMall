@@ -27,6 +27,9 @@ public class Product : ScriptableObject
 
     public Sprite ProductCategoryImage;
 
+    public double quantity;
+    public string quantityUnit;
+
     public string NameTranslate()
     {
         string TranslatedName = null;

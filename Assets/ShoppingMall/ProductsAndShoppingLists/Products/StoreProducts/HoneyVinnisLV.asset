@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 300g Vinnis LV
   DesctriptionRus: 300g Vinnis LV
   DesctriptionLV: 300g Vinnis LV
-  Model: {fileID: 0}
+  Model: {fileID: 8080378955635442206, guid: c1673e0caf48ec748b0c20908f444c12, type: 3}
   ProductCategory: 48
   price: 2.86
-  ProductCategoryImage: {fileID: 21300000, guid: f4fa5e856c0c10e4fa4cac0d76d35eb6, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: 7559a15388581a14b8636602f6f5e45a, type: 3}
+  quantity: 0
+  quantityUnit: 

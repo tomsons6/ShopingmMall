@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 3gb Daily
   DesctriptionRus: 3gb Daily
   DesctriptionLV: 3gb Daily
-  Model: {fileID: 8747843880652672874, guid: e19d90595be869646904af2d4ccaba7a, type: 3}
+  Model: {fileID: 0}
   ProductCategory: 35
   price: 1.5
-  ProductCategoryImage: {fileID: 21300000, guid: 031d98fd5c9bf26498d92822bc6b980c, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: 741669ecd50003045bc3aa4aaef2cd44, type: 3}
+  quantity: 0
+  quantityUnit: 

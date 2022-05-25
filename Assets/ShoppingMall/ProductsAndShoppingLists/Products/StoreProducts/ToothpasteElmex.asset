@@ -21,4 +21,6 @@ MonoBehaviour:
   Model: {fileID: 1437936746031925100, guid: 04711a67d674b624fb80daac94d6d4be, type: 3}
   ProductCategory: 20
   price: 7.53
-  ProductCategoryImage: {fileID: 21300000, guid: 5817e96e3a1c24347a3f58b7d7f0ef96, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: 7edc55c9e44eac245865c5695a0356d9, type: 3}
+  quantity: 0
+  quantityUnit: 

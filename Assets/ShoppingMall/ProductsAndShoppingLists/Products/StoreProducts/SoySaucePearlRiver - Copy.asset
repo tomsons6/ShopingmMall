@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 150ml. Pearl River
   DesctriptionRus: 150ml. Pearl River
   DesctriptionLV: 150ml. Pearl River
-  Model: {fileID: 0}
+  Model: {fileID: 1026045255804838, guid: 21884d5c7981451448e984ecc8a3749f, type: 3}
   ProductCategory: 32
   price: 0.89
-  ProductCategoryImage: {fileID: 21300000, guid: baed6e9c2fd7aa34d9de6cba03a9f42e, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: 5e104af4927d3214c82efb89bf453a10, type: 3}
+  quantity: 0
+  quantityUnit: 

@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 10g. I love eco
   DesctriptionRus: 10g. I love eco
   DesctriptionLV: 10g. I love eco
-  Model: {fileID: 0}
+  Model: {fileID: 4876409765216027287, guid: f562ea0e625d2fd429cfa2f996b9268b, type: 3}
   ProductCategory: 11
   price: 1.99
-  ProductCategoryImage: {fileID: 21300000, guid: 88d1bdc62fa8663468ee8cf229e1f6fa, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: 2425f5ac0bfc0124a8e48ae54ede9fa3, type: 3}
+  quantity: 0
+  quantityUnit: 

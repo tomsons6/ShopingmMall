@@ -18,7 +18,9 @@ MonoBehaviour:
   DesctriptionEng: 10g. Laplanta LV
   DesctriptionRus: "10g. \u041B\u0430\u043F\u043B\u0430\u043D\u0434\u0438\u044F LV"
   DesctriptionLV: 10g. Laplanta LV
-  Model: {fileID: 0}
+  Model: {fileID: 4876409765216027287, guid: f562ea0e625d2fd429cfa2f996b9268b, type: 3}
   ProductCategory: 11
   price: 1.02
-  ProductCategoryImage: {fileID: 21300000, guid: 88d1bdc62fa8663468ee8cf229e1f6fa, type: 3}
+  ProductCategoryImage: {fileID: 21300000, guid: 2425f5ac0bfc0124a8e48ae54ede9fa3, type: 3}
+  quantity: 0
+  quantityUnit: 
